@@ -1,0 +1,24 @@
+<div class="px-8 py-4 bg-gray-200 h-sc">
+  <%= render "navbar"%>
+  <main class="grid md:flex items-center justify-around relative">
+    <section class="md:basis-1/2">
+      <div class="hidden w-1/2 lg:flex justify-between absolute top-0">
+        <%= inline_svg_tag("print.svg", class: "size-40")%>
+        <%= inline_svg_tag("sign.svg", class: "size-40")%>
+      </div>
+      <h2 class="font-bold text-4xl capitalize mb-4">Manage your project with ease</h2>
+      <p class="mb-8 text-2xl">ProjectTask si a project management tool to your projects and tasks</p>
+      <%= link_to "Get Started", dashboard_index_path, class:"capitalize bg-orange-600 p-4 text-gray-200 text-4xl rounded-sm hover:text-gray-600 flex justify-center items-center"%>
+      <span>
+        <%#= inline_svg_tag("forward", class: "size-12")%>
+      </span>
+      <div class="hidden w-1/2 lg:flex justify-between absolute bottom-0">
+        <%= inline_svg_tag("star.svg", class: "size-40")%>
+        <%= inline_svg_tag("flash.svg", class: "size-40")%>
+      </div>
+    </section>
+    <div class="md:basis-1/2">
+      <%= image_tag("hero.png", class: "mt-8")%>
+    </div>
+  </main>
+</div>
