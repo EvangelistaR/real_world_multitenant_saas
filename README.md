@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is based on what is studied in [Real World Multitenant SaaS Using Ruby On Rails and Hotwire](https://www.udemy.com/course/real-world-multitenant-saas-using-ruby-on-rails-and-hotwire/?couponCode=ST5MT020225) course
 
 Things you may want to cover:
 
