@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ProjectTask</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+<head>
+  <title>ProjectTask</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
-  </body>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
+
+<body>
+  <main class="">
+    <% if notice.present? %>
+    <p class="bg-green-600 h-8 text-gray-200 font-semibold rounded-md px-4 absolute bottom-6 right-6"><%= notice %></p>
+    <% elsif alert.present? %>
+    <p class="bg-red-600 h-8 text-gray-200 font-semibold rounded-md px-4 absolute bottom-6 right-6"><%= alert %></p>
+    <% end %>
+    <%= yield %>
+  </main>
+</body>
+
 </html>
