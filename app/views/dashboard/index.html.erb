@@ -1,3 +1,9 @@
-<h1>
-  Dashboard page
-</h1>
+<div data-controller="toggle" class="h-screen bg-gray-900">
+  <%= render "top_bar" %>
+  <div class="flex h-full">
+    <%= render "sidebar"%>
+    <main class="text-gray-200">
+      <h2>This is the main</h2>
+    </main>
+  </div>
+</div>

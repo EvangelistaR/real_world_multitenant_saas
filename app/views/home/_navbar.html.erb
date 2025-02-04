@@ -5,10 +5,11 @@
   <div class="flex gap-6">
     <% if user_signed_in? %>
     <%= link_to "Sign out", destroy_user_session_url, class: "bg-orange-600 p-2 rounded-md capitalize font-bold text-gray-200 hover:bg-orange-800 flex items-center", "data-turbo-method": "delete"
-      %>
+        %>
+    <%= link_to "Dashboard", dashboard_index_path, class: "bg-gray-800 p-2 rounded-md capitalize font-bold text-gray-200 hover:bg-gray-600" %>
     <% else %>
     <%= link_to "Login", new_user_session_path, class: "bg-orange-600 p-2 rounded-md capitalize font-bold text-gray-200 hover:bg-orange-800 flex items-center"
-        %>
+          %>
     <span>
       <%#= inline_svg_tag("arrow-right-circle", class: "size-6")%>
     </span>

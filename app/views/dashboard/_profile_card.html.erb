@@ -1,0 +1,7 @@
+<div class="hidden bg-gray-600 size-32 p-4 absolute right-0 mt-4 rounded-md font-semibold capitalize" data-toggle-target="profileCard">
+  <ul>
+    <li class="mb-6"><%= link_to "Profile", edit_user_registration_path %></li>
+    <li><%= link_to("Logout", destroy_user_session_url, "data-turbo-method": "delete") %></li>
+    <li></li>
+  </ul>
+</div>
