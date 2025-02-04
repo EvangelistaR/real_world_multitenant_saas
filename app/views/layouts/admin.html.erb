@@ -15,7 +15,13 @@
 <body>
   <main class="">
     <%= render "shared/flash_messages"%>
-    <%= yield %>
+    <div data-controller="toggle" class="h-screen bg-gray-900">
+      <%= render "shared/top_bar" %>
+      <div class="flex h-full">
+        <%= render "shared/sidebar"%>
+        <%= yield %>
+      </div>
+    </div>
   </main>
 </body>
 
